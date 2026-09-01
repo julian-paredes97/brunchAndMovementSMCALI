@@ -1,0 +1,108 @@
+/* VARIABLES DE COLOR */
+:root {
+  --color-nude: #dfd4ca;
+  --color-cafe: #84694d;
+  --color-oscuro: #232323;
+  --font-main: 'Montserrat', sans-serif;
+  --font-script: 'Playfair Display', serif; /* Sustituto para You're Invited */
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-oscuro);
+  background-color: #fcfbf9;
+}
+
+/* TIPOGRAFÍAS Y ESTILOS DE TEXTO */
+.subtitle-script {
+  font-family: var(--font-script);
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.tracking-wide {
+  letter-spacing: 2px;
+}
+
+.text-cafe {
+  color: var(--color-cafe) !important;
+}
+
+.bg-nude {
+  background-color: var(--color-nude) !important;
+}
+
+.bg-cafe {
+  background-color: var(--color-cafe) !important;
+}
+
+.bg-dark-custom {
+  background-color: var(--color-oscuro) !important;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background-color: var(--color-nude);
+  min-height: 75vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.event-card-info {
+  max-width: 800px;
+  border: 1px solid rgba(132, 105, 77, 0.2);
+}
+
+/* BOTONES */
+.btn-cafe {
+  background-color: var(--color-cafe);
+  color: #ffffff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-cafe:hover {
+  background-color: #6a533c;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-outline-cafe {
+  border: 2px solid var(--color-cafe);
+  color: var(--color-cafe);
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-cafe:hover {
+  background-color: var(--color-cafe);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* PLANES / CARDS */
+.plan-card {
+  transition: transform 0.3s ease, shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.border-cafe {
+  border-color: var(--color-cafe) !important;
+}
+
+.price-tag {
+  background-color: var(--color-nude);
+  color: var(--color-oscuro);
+  display: inline-block;
+}
+
+/* MEDIA QUERIES PARA ADAPTABILIDAD */
+@media (min-width: 768px) {
+  .border-start-md {
+    border-left: 1px solid #dee2e6;
+  }
+}
