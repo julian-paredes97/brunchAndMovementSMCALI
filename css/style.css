@@ -44,8 +44,8 @@ body {
 .hero-section {
   background-color: var(--color-nude);
   min-height: 75vh;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  /* padding-top: 4rem;
+  padding-bottom: 4rem; */
 }
 
 .event-card-info {
@@ -105,4 +105,14 @@ body {
   .border-start-md {
     border-left: 1px solid #dee2e6;
   }
+}
+
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
 }
