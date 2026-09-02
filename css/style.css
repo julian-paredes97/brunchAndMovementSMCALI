@@ -100,13 +100,6 @@ body {
   display: inline-block;
 }
 
-/* MEDIA QUERIES PARA ADAPTABILIDAD */
-@media (min-width: 768px) {
-  .border-start-md {
-    border-left: 1px solid #dee2e6;
-  }
-}
-
 .card-hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
@@ -115,4 +108,29 @@ body {
 .card-hover:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+.fs-1{
+  font-size: 3.5rem !important;
+}
+
+/* MEDIA QUERIES PARA ADAPTABILIDAD */
+@media (min-width: 768px) {
+  .border-start-md {
+    border-left: 1px solid #dee2e6;
+  }
+}
+
+/*Celulares*/
+@media (max-width: 480px) {
+  .container{
+    width: 80% !important;
+  }
+
+  .fs-1{
+    font-size: 2.5rem !important;
+  }
+  /* .event-card-info{
+    width: 80% !important;
+  } */
 }
